@@ -93,15 +93,16 @@
 
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 
-frase = str(input("Digite uma frase: "))
-n_de_caracter_frase = len(frase)
-frase_nova = frase.strip()
-frase_nova_n_caracteres = len(frase_nova)
-print(f"O n° de caracteres da frase COM espaços é: {n_de_caracter_frase}")
-print(f"O n° de caracteres da frase SEM espaços é: {frase_nova_n_caracteres}")
+# frase = str(input("Digite uma frase: "))
+# n_de_caracter_frase = len(frase)
+# frase_nova = frase.strip()
+# frase_nova_n_caracteres = len(frase_nova)
+# print(f"O n° de caracteres da frase COM espaços é: {n_de_caracter_frase}")
+# print(f"O n° de caracteres da frase SEM espaços é: {frase_nova_n_caracteres}")
 
 
 # 14. Faça um programa que peça ao usuário para digitar um dado no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+
 # data = input("Digite a data no formato dd/mm/aaaa: ")
 # lista_dat_mes_ano = data.split("/")
 # print(f"O elemento 1 é o: {lista_dat_mes_ano[0]}")
@@ -109,6 +110,11 @@ print(f"O n° de caracteres da frase SEM espaços é: {frase_nova_n_caracteres}"
 # print(f"O elemento 3 é o: {lista_dat_mes_ano[2]}")
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+
+palavra_01 = str(input("Digite a primeira palavra: "))
+palavra_02 = str(input("Digite a segunda palavra: "))
+frase = palavra_01 + " " + palavra_02
+print(f"As palavras juntas ficam: {frase}")
 
 # #### Booleanos (`bool`)
 
