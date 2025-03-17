@@ -87,11 +87,19 @@
 
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 
-nome = str(input("Digite seu nome completo com todas as letras maiúsculas: "))
-nome_minusculo = nome.lower()
-print(f"O nome em minusculo fica {nome_minusculo}")
+# nome = str(input("Digite seu nome completo com todas as letras maiúsculas: "))
+# nome_minusculo = nome.lower()
+# print(f"O nome em minúsculo fica: {nome_minusculo}")
 
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+
+frase = str(input("Digite uma frase: "))
+n_de_caracter_frase = len(frase)
+frase_nova = frase.strip()
+frase_nova_n_caracteres = len(frase_nova)
+print(f"O n° de caracteres da frase COM espaços é: {n_de_caracter_frase}")
+print(f"O n° de caracteres da frase SEM espaços é: {frase_nova_n_caracteres}")
+
 
 # 14. Faça um programa que peça ao usuário para digitar um dado no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 # data = input("Digite a data no formato dd/mm/aaaa: ")
