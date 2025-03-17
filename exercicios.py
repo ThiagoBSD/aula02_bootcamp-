@@ -8,15 +8,21 @@
 # print(f"A soma dos dois números é: {soma}")
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-n = int(input("Digite um número: "))
+# n = int(input("Digite um número: "))
 
-resto_dividao = n % 2
+# resto_dividao = n % 2
 
-n_final = resto_dividao * 5
+# n_final = resto_dividao * 5
 
-print(f"O número final é: {n_final}")
+# print(f"O número final é: {n_final}")
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+
+multiplicacao = n1 * n2
+
+print(f"O resultado final da multiplicação entre esses dois números é: {multiplicacao}")
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
