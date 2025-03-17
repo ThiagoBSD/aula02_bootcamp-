@@ -67,10 +67,10 @@
 # print(f"A potência é: {potencia}")
 
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-celsius = float(input("Digite a temperatura em Celsius: "))
-fahrenheit = celsius * 1.8 + 32
+# celsius = float(input("Digite a temperatura em Celsius: "))
+# fahrenheit = celsius * 1.8 + 32
 
-print(f"A temperatura em celsius {celsius} convertida para fahrenheit é {fahrenheit}")
+# print(f"A temperatura em celsius {celsius} convertida para fahrenheit é {fahrenheit}")
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 # raio_do_circulo = float(input("Digite o raio: "))
@@ -80,7 +80,11 @@ print(f"A temperatura em celsius {celsius} convertida para fahrenheit é {fahren
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+palavra = str(input("Digite uma palavra: "))
 
+palavra_maiuscula = palavra.upper()
+
+print(f"A palavra {palavra} convertida para maiúscula é {palavra_maiuscula}")
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
