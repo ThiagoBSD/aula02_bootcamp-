@@ -51,14 +51,20 @@
 # print(f"A adição desses dois números é: {adicao}")
 
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-n1 = float(input("Digite o primeiro número: "))
-n2 = float(input("Digite o segundo número: "))
+# n1 = float(input("Digite o primeiro número: "))
+# n2 = float(input("Digite o segundo número: "))
 
-media = (n1 + n2) / 2
+# media = (n1 + n2) / 2
 
-print(f"A média entre os dois valores é: {media}")
+# print(f"A média entre os dois valores é: {media}")
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+base = float(input("Digite a base: "))
+espoente = float(input("Digite o espoente: "))
+
+potencia = (base ** espoente) * base
+
+print(f"A potência é: {potencia}")
 
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 
