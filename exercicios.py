@@ -43,14 +43,20 @@
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
-n1 = float(input("Digite o primeiro número flutuante: "))
-n2 = float(input("Digite o segundo número flutuante: "))
+# n1 = float(input("Digite o primeiro número flutuante: "))
+# n2 = float(input("Digite o segundo número flutuante: "))
 
-adicao = n1 + n2
+# adicao = n1 + n2
 
-print(f"A adição desses dois números é: {adicao}")
+# print(f"A adição desses dois números é: {adicao}")
 
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+n1 = float(input("Digite o primeiro número: "))
+n2 = float(input("Digite o segundo número: "))
+
+media = (n1 + n2) / 2
+
+print(f"A média entre os dois valores é: {media}")
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 
