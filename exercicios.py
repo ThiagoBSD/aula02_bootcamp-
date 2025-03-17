@@ -35,14 +35,20 @@
 #     print("Erro")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
-n = int(input("Digite um número: "))
-quadrado = n ** 2
+# n = int(input("Digite um número: "))
+# quadrado = n ** 2
 
-print(f"O quadrado de {n} é {quadrado}")
+# print(f"O quadrado de {n} é {quadrado}")
 
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+n1 = float(input("Digite o primeiro número flutuante: "))
+n2 = float(input("Digite o segundo número flutuante: "))
+
+adicao = n1 + n2
+
+print(f"A adição desses dois números é: {adicao}")
 
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
 
