@@ -248,20 +248,62 @@
 
 # 24: Classificador de Números
 
-def classificador_numero(numero):
-    if numero > 0:
-        return "positivo"
-    elif numero < 0:
-        return "negativo"
-    else:
-        return "zero"
+# def classificador_numero(numero):
+#     if numero > 0:
+#         return "positivo"
+#     elif numero < 0:
+#         return "negativo"
+#     else:
+#         return "zero"
     
-# Solicita so usuário um número
-try:
-    num = float(input("Digite um número: "))
-    classificacao = classificador_numero(num)
-    print(f"O número {num} é {classificacao}")
-except ValueError:
-    print("Por favor, isnsira um valor numérico válido.")
+# # Solicita so usuário um número
+# try:
+#     num = float(input("Digite um número: "))
+#     classificacao = classificador_numero(num)
+#     print(f"O número {num} é {classificacao}")
+# except ValueError:
+#     print("Por favor, isnsira um valor numérico válido.")
 
 # 25: Conversão de Tipo com Validação
+
+def converter_para_inteiro(valor):
+    try:
+        return int(valor)
+    except ValueError:
+        return "Erro: Não é um número inteiro válido."
+    
+def converter_para_float(valor):
+    try:
+        return float(valor)
+    except ValueError:
+        return "Erro: Não é um decimal válido."
+    
+def converter_para_booleano(valor):
+    valor = valor.strip().lower()
+    if valor in ["true", "1", "sim", "s"]:
+        return True
+    elif valor in ["false", "0", "não", "n"]:
+        return False
+    else: 
+        return "Erro: Não é um valor booleano válido."
+    
+# Solicita ao usuário o valor e op tipo de conversão
+
+valor = input("Digite um valor: ")
+print("Escolha oo tipo para conversão: ")
+print("1 - Inteiro")
+print("2 - Decimal (float)")
+print("3 - Booleano")
+
+tipo = input("Digite o número da conversão desejada: ")
+
+# Realiza a conversão e xibe o resultado
+
+if tipo == "1":
+    print(converter_para_inteiro(valor))
+elif tipo == "2":
+    print(converter_para_float(valor))
+elif tipo == "3":
+    print(converter_para_booleano(valor))
+else: 
+    print("Erro: Opção inválida.")
