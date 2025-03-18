@@ -111,16 +111,25 @@
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
-palavra_01 = str(input("Digite a primeira palavra: "))
-palavra_02 = str(input("Digite a segunda palavra: "))
-frase = palavra_01 + " " + palavra_02
-print(f"As palavras juntas ficam: {frase}")
+# palavra_01 = str(input("Digite a primeira palavra: "))
+# palavra_02 = str(input("Digite a segunda palavra: "))
+# frase = palavra_01 + " " + palavra_02
+# print(f"As palavras juntas ficam: {frase}")
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+# valor1 = True
+# valor2 = False
+# resultado_and = valor1 and valor2
+# print("Resultado do AND lógico:", resultado_and)
 
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+
+valor_1 = True
+valor_2 = False
+resultado = valor_1 or valor_2
+print(f"O vresultado é: {resultado}")
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 
