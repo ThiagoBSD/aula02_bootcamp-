@@ -156,17 +156,40 @@
 
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
-n1 = float(input("Digite o primeiro número: "))
-n2 = float(input("Digite o segundo número: "))
+# n1 = float(input("Digite o primeiro número: "))
+# n2 = float(input("Digite o segundo número: "))
  
-if n1 == n2:
-    print("Os números são iguais!")
-else:
-    print("Os números são diferentes!")
+# if n1 == n2:
+#     print("Os números são iguais!")
+# else:
+#     print("Os números são diferentes!")
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+def celsius_para_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_para_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+# Solicitar aos usuário a temperatura e a unidade de conversão
+escala = input("Digite 'C' para converter de Celsius para Fahrenheit ou 'F' para converter de Fahrenheit para Celsius")
+
+try:
+    temperatura = float(input("Digite a temperatura: "))
+
+    if escala == 'C':
+        resultado = celsius_para_fahrenheit(temperatura)
+        print(f"{temperatura} °C equivale a {resultado:.2f}°F")
+    elif escala == 'F':
+        resultado = fahrenheit_para_celsius(temperatura)
+        print(f"{temperatura} °F equivale a {resultado:.2f}°C")
+    else:
+        print("Opção inválida. Escolha 'C' ou 'F'.")
+except ValueError:
+    print("Por favor, insira um valor numérico válido.")
 
 # 22: Verificador de Palíndromo
 
