@@ -206,46 +206,62 @@
 
 # 23: Calculadora Simples
 
-def soma(a, b):
-    return a + b
-def subtracao(a, b):
-    return a - b
-def multiplicacao(a, b):
-    return a * b
-def divisao(a, b):
-    if b != 0:
-        return a / b
-    else:
-        return "Erro: Divisão por zero"
+# def soma(a, b):
+#     return a + b
+# def subtracao(a, b):
+#     return a - b
+# def multiplicacao(a, b):
+#     return a * b
+# def divisao(a, b):
+#     if b != 0:
+#         return a / b
+#     else:
+#         return "Erro: Divisão por zero"
     
-# Solicitação ao usuário a operação desejada
-print("Escolha a operação: ")
-print("1 - Soma")
-print("2 - Subtração")
-print("3 - Multiplicação")
-print("4 - Divisão")
+# # Solicitação ao usuário a operação desejada
+# print("Escolha a operação: ")
+# print("1 - Soma")
+# print("2 - Subtração")
+# print("3 - Multiplicação")
+# print("4 - Divisão")
 
-operacao = input("Digite o número da operação desejada: ")
+# operacao = input("Digite o número da operação desejada: ")
 
-try:
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
+# try:
+#     num1 = float(input("Digite o primeiro número: "))
+#     num2 = float(input("Digite o segundo número: "))
 
-    if operacao == "1":
-        print(f"Resultado: {soma(num1, num2)}")
-    elif operacao =="2":
-        print(f"Resultado: {subtracao(num1, num2)}")
-    elif operacao == "3":
-        print(f"Resultado: {multiplicacao(num1, num2)}")
-    elif operacao == "4":
-        print(f"Resultado : {divisao(num1, num2)}")
-    else:
-        print("Opção inválida!")
-except ValueError:
-    print("Por favor, insira um número válido.")
+#     if operacao == "1":
+#         print(f"Resultado: {soma(num1, num2)}")
+#     elif operacao =="2":
+#         print(f"Resultado: {subtracao(num1, num2)}")
+#     elif operacao == "3":
+#         print(f"Resultado: {multiplicacao(num1, num2)}")
+#     elif operacao == "4":
+#         print(f"Resultado : {divisao(num1, num2)}")
+#     else:
+#         print("Opção inválida!")
+# except ValueError:
+#     print("Por favor, insira um número válido.")
 
 
 
 # 24: Classificador de Números
+
+def classificador_numero(numero):
+    if numero > 0:
+        return "positivo"
+    elif numero < 0:
+        return "negativo"
+    else:
+        return "zero"
+    
+# Solicita so usuário um número
+try:
+    num = float(input("Digite um número: "))
+    classificacao = classificador_numero(num)
+    print(f"O número {num} é {classificacao}")
+except ValueError:
+    print("Por favor, isnsira um valor numérico válido.")
 
 # 25: Conversão de Tipo com Validação
