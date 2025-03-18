@@ -168,31 +168,42 @@
 
 # 21: Conversor de Temperatura
 
-def celsius_para_fahrenheit(celsius):
-    return (celsius * 9/5) + 32
+# def celsius_para_fahrenheit(celsius):
+#     return (celsius * 9/5) + 32
 
-def fahrenheit_para_celsius(fahrenheit):
-    return (fahrenheit - 32) * 5/9
+# def fahrenheit_para_celsius(fahrenheit):
+#     return (fahrenheit - 32) * 5/9
 
-# Solicitar aos usuário a temperatura e a unidade de conversão
-escala = input("Digite 'C' para converter de Celsius para Fahrenheit ou 'F' para converter de Fahrenheit para Celsius")
+# # Solicitar aos usuário a temperatura e a unidade de conversão
+# escala = input("Digite 'C' para converter de Celsius para Fahrenheit ou 'F' para converter de Fahrenheit para Celsius")
 
-try:
-    temperatura = float(input("Digite a temperatura: "))
+# try:
+#     temperatura = float(input("Digite a temperatura: "))
 
-    if escala == 'C':
-        resultado = celsius_para_fahrenheit(temperatura)
-        print(f"{temperatura} °C equivale a {resultado:.2f}°F")
-    elif escala == 'F':
-        resultado = fahrenheit_para_celsius(temperatura)
-        print(f"{temperatura} °F equivale a {resultado:.2f}°C")
-    else:
-        print("Opção inválida. Escolha 'C' ou 'F'.")
-except ValueError:
-    print("Por favor, insira um valor numérico válido.")
+#     if escala == 'C':
+#         resultado = celsius_para_fahrenheit(temperatura)
+#         print(f"{temperatura} °C equivale a {resultado:.2f}°F")
+#     elif escala == 'F':
+#         resultado = fahrenheit_para_celsius(temperatura)
+#         print(f"{temperatura} °F equivale a {resultado:.2f}°C")
+#     else:
+#         print("Opção inválida. Escolha 'C' ou 'F'.")
+# except ValueError:
+#     print("Por favor, insira um valor numérico válido.")
 
 # 22: Verificador de Palíndromo
 
+def eh_palíndromo(texto):
+    texto = texto.lower().replace(" ", "")
+    return texto == texto[::-1]
+
+entrada = input("Digite uma palavra ou frase para verificar se é um palíndromo: ").strip()
+
+if eh_palíndromo(entrada):
+    print("é um palíndromo!")
+else:
+    print("Não é um palíndromo.")
+    
 # 23: Calculadora Simples
 
 # 24: Classificador de Números
