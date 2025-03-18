@@ -146,15 +146,23 @@
 
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 
-n1 = float(input("Digite o primeiro número: "))
-n2 = float(input("Digite o segundo número: "))
+# n1 = float(input("Digite o primeiro número: "))
+# n2 = float(input("Digite o segundo número: "))
 
-if n1 != n2:
-    print("Os números são diferentes")
-else:
-    print("Os números são iguais")
+# if n1 != n2:
+#     print("Os números são diferentes")
+# else:
+#     print("Os números são iguais")
 
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+
+n1 = float(input("Digite o primeiro número: "))
+n2 = float(input("Digite o segundo número: "))
+ 
+if n1 == n2:
+    print("Os números são iguais!")
+else:
+    print("Os números são diferentes!")
 
 # #### try-except e if
 
